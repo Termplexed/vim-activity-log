@@ -1,4 +1,4 @@
-Vim Activity Log #ARCHIVED#
+Vim Activity Log #FORK#
 =========================
 
 This vim plugin is used to keep track of what and when you do things.
@@ -6,18 +6,21 @@ This vim plugin is used to keep track of what and when you do things.
 # Installation
 
 	cd ~
-	git clone git://github.com/AD7six/vim-activity-log.git
+	git clone git://github.com/Termplexed/vim-activity-log.git
+
 	ln -s vim-activity-log/plugin/activity-log.vim ~/.vim/plugin/
 
 # Usage
 
-The plugin is automatic, and will create log files of your vim actions in: `~/activity/YYYY/MM/DD.log`
-If you prefer a different location for your logs - you can define `g:activity_log_location` in your
-.vimrc file
+The plugin is automatic, and will create log files of your vim actions in:
+
+`~/activity/YYYY/MM/DD.log`
+
+If you prefer a different location for your logs - you can define `g:activity_log_location` in your `.vimrc` file
 
 The format for entries in the log files is:
 
-	Y-m-d H:i:s;action;/full/path/to/file;git-branch
+	Y-m-d H:i:s;user;action;/full/path/to/file;git-branch
 
 The git-branch is only added if a branch can be determined.
 
@@ -29,3 +32,5 @@ The git-branch is only added if a branch can be determined.
 * 1.2.1 Correct git branch parsing
 * 1.3.0 Restructure parameters, use a pattern not a fixed file location, allow setting from outside
 	the plugin
+---
+* 2.0.0 Termplexed fork with chages. See changelog in activity-log.vim for details.
